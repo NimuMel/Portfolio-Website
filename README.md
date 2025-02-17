@@ -57,10 +57,3 @@ The website is built with security in mind. Some of the security measures includ
 - **Backend Integration:** Potential integration with a backend for storing contact form submissions or adding more dynamic content.
 - **Dark Mode:** Implement a dark mode toggle for better accessibility and user preference.
 
-## Contributing
-
-Feel free to fork the repository and submit pull requests with suggestions, bug fixes, or improvements. Contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
