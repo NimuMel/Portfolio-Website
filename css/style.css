@@ -5,12 +5,15 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styling */
 header {
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
 }
+
+/* Navigation Bar */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -21,6 +24,7 @@ nav ul li {
     margin-right: 15px;
 }
 
+/* Default link styling */
 a {
     color: black;
     text-decoration: none;
@@ -30,6 +34,18 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Force white text for Home, Projects, and Contact */
+nav ul li a {
+    color: white !important;
+}
+
+/* Automatically make Project 1 links purple */
+a.project1, 
+a[data-project="1"] {
+    color: purple !important;
+}
+
+/* Margin for sections */
 section {
     margin: 20px;
 }
