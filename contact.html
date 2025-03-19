@@ -1,1 +1,62 @@
-<-- Contact methods like email, a form potentially, phone number maybe -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self'; 
+        style-src 'self'; 
+        img-src 'self'; 
+        font-src 'self'; 
+        object-src 'none'; 
+        base-uri 'self'; 
+        form-action 'self';
+    ">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Ways to Reach Me</h2>
+            <p>If you have any questions or want to discuss potential opportunities, feel free to contact me using one of the methods below:</p>
+            <ul>
+                <li>Email: <a href="mailto:nimuemeller@gmail.com">nimuemeller@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/nimuemeller" target="_blank">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/NimuMel" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <p>If you'd like to send me a message directly, please fill out the form below:</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact Info: <a href="mailto:nimuemeller@gmail.com">nimuemeller@gmail.com</a></p>
+    </footer>
+</body>
+</html>
