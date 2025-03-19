@@ -3,49 +3,115 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
+/* Header Styling */
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     text-align: center;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Ensure navigation links always appear white */
 .nav-link {
     color: white;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Apply purple color for Project 1-related links */
+.nav-link:hover {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* General Link Styling */
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+/* Special Link Colors */
 .project1-link {
     color: purple;
 }
 
-/* Apply red for Project 2 links */
 .project2-link {
     color: red;
 }
 
+/* Sections */
 section {
     margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* Project Status Labels */
+.status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.completed {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.in-progress {
+    background-color: #FF9800;
+    color: white;
+}
+
+.planned {
+    background-color: #607D8B;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 }
