@@ -8,7 +8,7 @@
         default-src 'self'; 
         script-src 'self'; 
         style-src 'self'; 
-        img-src 'self'; 
+        img-src 'self' https://trusted-cdn.com; 
         font-src 'self'; 
         object-src 'none'; 
         base-uri 'self'; 
@@ -34,12 +34,25 @@
             <p>Goals of this project:</p>
             <ul>
                 <li>Demonstrate proficiency in HTML and CSS.</li>
-                <li>Host a website using GitHub Pages.</li>
+                <li>Improve security and reliability through hosting upgrades.</li>
                 <li>Implement security measures such as Content Security Policy (CSP).</li>
                 <li>Use the site to display ongoing and completed projects.</li>
             </ul>
-            <p>As the project evolves, I plan to explore alternative hosting services, improve security, and add new features.</p>
         </section>
+        
+        <section>
+            <h2>Project Evolution</h2>
+            <p>This website initially started as a simple project hosted on GitHub Pages, providing an easy and free way to showcase my work.</p>
+            <p>As I needed more flexibility and control, I transitioned the site to an AWS EC2 instance. This allowed for improved security, better customization, and the ability to configure a firewall to protect the machine.</p>
+            <p>To enhance performance and security further, I integrated Cloudflare for CDN and DDoS protection. Finally, I set up Apache to manage hosting efficiently, allowing me to serve the website on my custom domain, <a href="https://nimuemeller.dev" target="_blank">nimuemeller.dev</a>.</p>
+        </section>
+        
+        <section>
+            <h2>Project Status</h2>
+            <p>Current state of the project:</p>
+            <span class="status completed">Completed</span>
+        </section>
+        
         <section>
             <h2>Project Repository</h2>
             <p>View the source code on GitHub:</p>
@@ -47,7 +60,7 @@
         </section>
     </main>
     <footer>
-        <p>Contact Info: nimuemeller@gmail.com</p>
+        <p>Contact Info: <a href="mailto:nimuemeller@gmail.com">nimuemeller@gmail.com</a></p>
     </footer>
 </body>
 </html>
